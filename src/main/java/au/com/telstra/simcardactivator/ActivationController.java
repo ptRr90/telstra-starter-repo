@@ -18,7 +18,7 @@ public class ActivationController {
     public ResponseEntity<String> activation(@RequestBody String activation) {
         System.out.println("Post Mapping Class for Activation");
         try {
-            //Parse json data
+            // Parse json data
             ObjectMapper om = new ObjectMapper();
             JsonNode rootNode = om.readTree(activation);
 
